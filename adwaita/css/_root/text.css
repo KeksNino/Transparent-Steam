@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root
 {
 	--adw-text-font-primary: "Adwaita Sans";
@@ -7,12 +8,32 @@
 	--adw-text-font-monospace-primary: "Adwaita Mono";
 	--adw-text-font-monospace-fallback: "Consolas", "Lucida Console", monospace;
 	--adw-text-font-monospace: var(--adw-text-font-monospace-primary), var(--adw-text-font-monospace-fallback);
+=======
+@font-face
+{
+	font-family: "Cantarell-VF";
+	font-weight: 100 900;
+	font-display: swap;
+	font-style: normal;
+	font-named-instance: "Regular";
+	src: url("https://steamloopback.host/adwaita/fonts/cantarell/cantarell-vf.otf") format("opentype");
+}
+
+:root
+{
+	--adw-text-font: "Cantarell-VF", "Cantarell", "Noto Sans", "Motiva Sans", Arial, Helvetica, sans-serif;
+>>>>>>> e5449e3 (added custom css + updated README)
 
 	--adw-text-base-size: 15px;
 	--adw-text-base-weight: 400;
 
+<<<<<<< HEAD
 	--adw-text-largetitle-size: 26px;
 	--adw-text-largetitle-weight: 800;
+=======
+	--adw-text-largetitle-size: 24px;
+	--adw-text-largetitle-weight: 300;
+>>>>>>> e5449e3 (added custom css + updated README)
 
 	--adw-text-title1-size: 20px;
 	--adw-text-title1-weight: 800;

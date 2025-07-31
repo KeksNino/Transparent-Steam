@@ -7,7 +7,11 @@ body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div.WYgDg9NyCcMIVuMyZ_NBC
 	box-shadow: var(--adw-card-shadow) !important;
 	transform: none !important;
 	transition: var(--adw-button-transition), filter 200ms !important;
+<<<<<<< HEAD
 	cursor: var(--adw-cursor-pointer) !important;
+=======
+	cursor: default !important;
+>>>>>>> e5449e3 (added custom css + updated README)
 	position: relative !important;
 	overflow: hidden !important;
 }

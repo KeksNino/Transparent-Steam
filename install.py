@@ -9,7 +9,14 @@ import shutil
 import time
 import os
 
+<<<<<<< HEAD
 if platform == "win32":
+=======
+# Platform Specific
+if platform == "win32":
+	is_windows = True
+
+>>>>>>> e5449e3 (added custom css + updated README)
 	TEXT_BOLD = ""
 	TEXT_BLUE = ""
 	TEXT_GREEN = ""
@@ -22,6 +29,11 @@ if platform == "win32":
 	TEXT_CROSS = ""
 	TEXT_INFO = ""
 else:
+<<<<<<< HEAD
+=======
+	is_windows = False
+
+>>>>>>> e5449e3 (added custom css + updated README)
 	TEXT_BOLD = "\033[1m"
 	TEXT_BLUE = "\033[1;34m"
 	TEXT_GREEN = "\033[1;32m"
@@ -39,9 +51,14 @@ COLOR_THEME_DIR = f"{ADWAITA_DIR}/colorthemes"
 CUSTOM_DIR = "custom"
 EXTRAS_DIR = f"{ADWAITA_DIR}/extras"
 
+<<<<<<< HEAD
 TARGET_LINUX = "~/.steam/steam"
 TARGET_LINUX_FLATPAK = "~/.var/app/com.valvesoftware.Steam/.steam/steam"
 TARGET_LINUX_SNAP = "~/snap/steam/common/.steam/steam"
+=======
+TARGET_NORMAL = "~/.steam/steam"
+TARGET_FLATPAK = "~/.var/app/com.valvesoftware.Steam/.steam/steam"
+>>>>>>> e5449e3 (added custom css + updated README)
 TARGET_WINDOWS = "C:\\Program Files (x86)\\Steam"
 TARGET_MACOS = "~/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS"
 
@@ -118,7 +135,11 @@ def format_import(prefix: str, string: str) -> str:
 	return f"@import url(\"{prefix}/{string}\");\n"
 
 def generate_windowcontrols(layout: str) -> str:
+<<<<<<< HEAD
 	(buttons_left, buttons_right) = [[b for b in s.split(",") if b in WINDOWCONTROLS_SELECTORS] for s in layout.split(":")]
+=======
+	(buttons_left, buttons_right) = [[b for b in s.split(',') if b in WINDOWCONTROLS_SELECTORS] for s in layout.split(':')]
+>>>>>>> e5449e3 (added custom css + updated README)
 	windowcontrols = f""":root
 {{
 	--adw-windowcontrols-left-has-buttons: { 0 if len(buttons_left) == 0 else 1 };
@@ -169,7 +190,11 @@ html.client_chat_frame
 }}"""
 	return windowcontrols
 
+<<<<<<< HEAD
 def generate_libraryroot(target: Path, extras: list[Path], color_theme: str, font: str, windowcontrols_theme: str, windowcontrols_layout: str, custom_css: bool):
+=======
+def generate_libraryroot(target: Path, extras: list[Path], color_theme: str, windowcontrols_theme: str, windowcontrols_layout: str, custom_css: bool):
+>>>>>>> e5449e3 (added custom css + updated README)
 	content = "/* Main Files */\n"
 	for f in LIBRARY_FILES:
 		content += format_import(STEAM_LOOPBACK_ADWAITA, f)
@@ -193,11 +218,14 @@ def generate_libraryroot(target: Path, extras: list[Path], color_theme: str, fon
 		content += "\n/* Color theme */\n"
 		content += format_import(STEAM_LOOPBACK_ADWAITA, f"colorthemes/{color_theme}/{color_theme}.css")
 
+<<<<<<< HEAD
 	if font:
 		print(f"{TEXT_BLUE}{TEXT_ARROW} Applying font {TEXT_BOLD}{font}{TEXT_RESET}")
 		content += "\n/* Font */\n"
 		content += format_import(STEAM_LOOPBACK_ADWAITA, f"fonts/{font}/{font}.css")
 
+=======
+>>>>>>> e5449e3 (added custom css + updated README)
 	if windowcontrols_theme:
 		print(f"{TEXT_BLUE}{TEXT_ARROW} Applying window controls theme {TEXT_BOLD}{windowcontrols_theme}{TEXT_RESET}")
 		content += "\n/* Window controls theme */\n"
@@ -218,7 +246,11 @@ def generate_libraryroot(target: Path, extras: list[Path], color_theme: str, fon
 	content += f"\n/* Window controls layout - {windowcontrols_layout} */\n"
 	content += generate_windowcontrols(windowcontrols_layout)
 
+<<<<<<< HEAD
 	target.open("w", encoding = "utf-8").write(content)
+=======
+	target.open('w').write(content)
+>>>>>>> e5449e3 (added custom css + updated README)
 
 # Color Themes
 def find_color_themes() -> list[Path]:
@@ -241,7 +273,11 @@ def patch_client_css(target: Path, name: str):
 		return
 
 	# Skip if already patched
+<<<<<<< HEAD
 	with target_css.open(encoding = "utf-8") as css_file:
+=======
+	with target_css.open() as css_file:
+>>>>>>> e5449e3 (added custom css + updated README)
 		if css_file.readline().strip() == STEAM_PATCHED_HEADER:
 			return
 
@@ -249,6 +285,7 @@ def patch_client_css(target: Path, name: str):
 	name = target_css.stem
 	css_dir = "css"
 
+<<<<<<< HEAD
 	content = f"{STEAM_PATCHED_HEADER}\n"
 	content += format_import(STEAM_LOOPBACK, f"{css_dir}/{name}.original.css")
 	content += format_import(STEAM_LOOPBACK, f"{custom_library_name}")
@@ -258,6 +295,17 @@ def patch_client_css(target: Path, name: str):
 	size_diff = orig_css.stat().st_size - target_css.stat().st_size
 	padding = " " * size_diff
 	target_css.open("a", encoding = "utf-8").write(padding)
+=======
+	content = f'{STEAM_PATCHED_HEADER}\n'
+	content += format_import(STEAM_LOOPBACK, f"{css_dir}/{name}.original.css")
+	content += format_import(STEAM_LOOPBACK, f"{custom_library_name}")
+
+	target_css.open('w').write(content)
+
+	size_diff = orig_css.stat().st_size - target_css.stat().st_size
+	padding = " " * size_diff
+	target_css.open('a').write(padding)
+>>>>>>> e5449e3 (added custom css + updated README)
 
 def uninstall_theme(target: Path):
 	adwaita = target / STEAM_ADWAITA_DIR
@@ -270,7 +318,11 @@ def uninstall_theme(target: Path):
 		print(f"{TEXT_PURPLE}{TEXT_INFO} steamui in {TEXT_BOLD}{target}{TEXT_RESET}{TEXT_PURPLE} not found, skipping{TEXT_RESET}")
 		return
 
+<<<<<<< HEAD
 	open(custom_library, "w", encoding = "utf-8").close()
+=======
+	open(custom_library, 'w').close()
+>>>>>>> e5449e3 (added custom css + updated README)
 	if adwaita.is_dir():
 		shutil.rmtree(adwaita)
 
@@ -299,14 +351,22 @@ if __name__ == "__main__":
 
 	parser = ArgumentParser(description = "Adwaita-for-Steam installer")
 	parser.add_argument("-c", "--color-theme", default = "adwaita", type = str.lower, help = "Choose color theme")
+<<<<<<< HEAD
 	parser.add_argument("-f", "--font", default = "adwaita", choices = ["adwaita", "cantarell"], type = str.lower, help = "Font")
 	parser.add_argument("--windowcontrols-theme", default = "auto", choices = ["auto", "adwaita", "breeze", "windows", "macos"], type = str.lower, help = "Window button theme")
+=======
+	parser.add_argument("--windowcontrols-theme", default = "auto", choices = ["auto", "adwaita", "windows", "macos"], type = str.lower, help = "Window button theme")
+>>>>>>> e5449e3 (added custom css + updated README)
 	parser.add_argument("--windowcontrols-layout", default = "auto", type = str.lower, help = "Window button positions: 'auto', 'gnome'|'adwaita', 'pantheon'|'elementary', 'windows', 'macos', or GNOME button layout string")
 	parser.add_argument("--custom-css", action = "store_true", help = "Enable Custom CSS")
 	parser.add_argument("-d", "--dev", action = "store_true", help = "Dev Mode")
 	parser.add_argument("-e", "--extras", nargs = "+", action = "extend", help = "Enable one or multiple theme extras")
 	parser.add_argument("-l", "--list-options", action = "store_true", help = "List available themes & extras and exit")
+<<<<<<< HEAD
 	parser.add_argument("-t", "--target", nargs = "+", action = "extend", help = "Install targets: 'linux', 'windows', 'macos', 'flatpak', 'snap', custom paths")
+=======
+	parser.add_argument("-t", "--target", nargs = "+", action = "extend", help = "Install targets: 'normal', 'flatpak', custom paths")
+>>>>>>> e5449e3 (added custom css + updated README)
 	parser.add_argument("-u", "--uninstall", action = "store_true", help = "Uninstall theme")
 	args = parser.parse_args()
 
@@ -317,7 +377,11 @@ if __name__ == "__main__":
 
 	if args.target is None:
 		if platform == "linux":
+<<<<<<< HEAD
 			args.target = ["linux", "flatpak", "snap"]
+=======
+			args.target = ["normal", "flatpak"]
+>>>>>>> e5449e3 (added custom css + updated README)
 		elif platform == "win32":
 			args.target = ["windows"]
 		elif platform == "darwin":
@@ -325,12 +389,19 @@ if __name__ == "__main__":
 
 	targets = set()
 	for t in args.target:
+<<<<<<< HEAD
 		if t == "linux" or t == "normal":
 			targets.add(Path(TARGET_LINUX).expanduser().resolve())
 		elif t == "flatpak":
 			targets.add(Path(TARGET_LINUX_FLATPAK).expanduser().resolve())
 		elif t == "snap":
 			targets.add(Path(TARGET_LINUX_SNAP).expanduser().resolve())
+=======
+		if t == "normal":
+			targets.add(Path(TARGET_NORMAL).expanduser().resolve())
+		elif t == "flatpak":
+			targets.add(Path(TARGET_FLATPAK).expanduser().resolve())
+>>>>>>> e5449e3 (added custom css + updated README)
 		elif t == "windows":
 			try:
 				import winreg
@@ -393,7 +464,11 @@ if __name__ == "__main__":
 
 		print(f"{TEXT_BLUE}{TEXT_ARROW} Creating stage directory {TEXT_BOLD}{sourcedir}{TEXT_RESET}")
 
+<<<<<<< HEAD
 		generate_libraryroot(libraryroot, args.extras, args.color_theme, args.font, args.windowcontrols_theme, args.windowcontrols_layout, args.custom_css)
+=======
+		generate_libraryroot(libraryroot, args.extras, args.color_theme, args.windowcontrols_theme, args.windowcontrols_layout, args.custom_css)
+>>>>>>> e5449e3 (added custom css + updated README)
 
 		for target in targets:
 			if not target.is_dir():

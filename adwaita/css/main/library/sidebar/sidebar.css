@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+=======
+body.DesktopUI div[class*="library_LeftListSizableContainer_"],
+body.DesktopUI div._9sPoVBFyE_vE87mnZJ5aB
+{
+	position: initial !important;
+}
+
+>>>>>>> e5449e3 (added custom css + updated README)
 body.DesktopUI div[class*="gamelistbar_Container_"],
 body.DesktopUI div._3x1HklzyDs4TEjACrRO2tB
 {
@@ -94,7 +103,11 @@ body.DesktopUI div._1ijTaXJJA5YWl_fW2IxcaT div.ReactVirtualized__Grid__innerScro
 body.DesktopUI div[class*="gamelistbar_GameListHomeAndSearch_"],
 body.DesktopUI div._2TKEazUUS3TlniZfpc8OOe
 {
+<<<<<<< HEAD
 	position: fixed !important;
+=======
+	position: absolute !important;
+>>>>>>> e5449e3 (added custom css + updated README)
 	top: 6px !important;
 	left: calc(var(--adw-windowcontrols-margin-left) + 86px) !important;
 	background: transparent !important;
@@ -164,7 +177,11 @@ body.DesktopUI div._2TKEazUUS3TlniZfpc8OOe a
 {
 	-webkit-app-region: no-drag !important;
 	-webkit-user-drag: none !important;
+<<<<<<< HEAD
 	cursor: var(--adw-cursor-pointer) !important;
+=======
+	cursor: default !important;
+>>>>>>> e5449e3 (added custom css + updated README)
 	background: transparent !important;
 	border-radius: var(--adw-button-radius) !important;
 	box-sizing: border-box !important;
@@ -173,7 +190,10 @@ body.DesktopUI div._2TKEazUUS3TlniZfpc8OOe a
 	padding: 9px !important;
 	margin: 0 !important;
 	transition: var(--adw-button-transition);
+<<<<<<< HEAD
 	border: none !important
+=======
+>>>>>>> e5449e3 (added custom css + updated README)
 }
 
 body.DesktopUI div[class*="gamelistbar_GameListHomeAndSearch_"] a > *,
@@ -300,7 +320,11 @@ body.DesktopUI div._20QAC4WMXm8qFE8waUT5oo div._12vo5L1hsNGdao6_ssuirS > .Dialog
 body.DesktopUI div[class*="gamelistsearchbar_Container_"] div[class*="gamelistsearchbar_SearchInput_"] > div[class*="gamelistsearchbar_SearchFilterInput_"] > div[class*="gamelistsearchbar_SearchFilterInputClear_"],
 body.DesktopUI div._20QAC4WMXm8qFE8waUT5oo div._12vo5L1hsNGdao6_ssuirS > div._172OFJhtx4Jt2ydY6-9IUm > div._38tIMc-4Ug-Akpa1pYlN0R
 {
+<<<<<<< HEAD
 	cursor: var(--adw-cursor-pointer) !important;
+=======
+	cursor: default !important;
+>>>>>>> e5449e3 (added custom css + updated README)
 	right: 9px !important;
 	top: 9px !important;
 }
@@ -358,7 +382,11 @@ body.DesktopUI div._20QAC4WMXm8qFE8waUT5oo div.vCCmYvn9yQ_V8CpKupllU div._1TxHdz
 	height: 16px !important;
 	min-width: 16px !important;
 	min-height: 16px !important;
+<<<<<<< HEAD
 	cursor: var(--adw-cursor-pointer) !important;
+=======
+	cursor: default !important;
+>>>>>>> e5449e3 (added custom css + updated README)
 }
 
 body.DesktopUI div[class*="gamelistsearchbar_Container_"] div[class*="gamelistsearchbar_AdvancedSearchContainer_"] div[class*="gamelistsearchbar_AdvancedSearchButton_"] svg,
@@ -444,7 +472,11 @@ body.DesktopUI div._20QAC4WMXm8qFE8waUT5oo div._12vo5L1hsNGdao6_ssuirS > div._17
 	height: 24px !important;
 	border-radius: 50% !important;
 	background: transparent !important;
+<<<<<<< HEAD
 	cursor: var(--adw-cursor-pointer) !important;
+=======
+	cursor: default !important;
+>>>>>>> e5449e3 (added custom css + updated README)
 }
 
 body.DesktopUI div[class*="gamelistsearchbar_Container_"] div[class*="gamelistsearchbar_SearchInput_"] > div[class*="gamelistsearchbar_SearchFilterInput_"] > div[class*="gamelistsearchbar_FilterTag_"] > div:not([class]) > svg:hover,
@@ -504,7 +536,11 @@ body.DesktopUI div._1ZS_xta5HMXzR8JgxDH6n7 div._2PF_m-I5yte3WnQhpcz8RC
 	box-sizing: border-box !important;
 	margin: 0 !important;
 	border-radius: var(--adw-button-radius) !important;
+<<<<<<< HEAD
 	cursor: var(--adw-cursor-pointer) !important;
+=======
+	cursor: default !important;
+>>>>>>> e5449e3 (added custom css + updated README)
 	transition: var(--adw-button-transition) !important;
 	color: rgb(var(--adw-headerbar-fg-rgb)) !important;
 	background: rgba(var(--adw-headerbar-fg-rgb), var(--adw-button-bg-opacity)) !important;
@@ -574,7 +610,11 @@ body.DesktopUI div._1ZS_xta5HMXzR8JgxDH6n7 div._1PgAonvorr0o_NMxNKiDFU > div._3m
 	margin: 0 !important;
 	background: transparent !important;
 	border-radius: var(--adw-button-radius) !important;
+<<<<<<< HEAD
 	cursor: var(--adw-cursor-pointer) !important;
+=======
+	cursor: default !important;
+>>>>>>> e5449e3 (added custom css + updated README)
 	color: rgba(var(--adw-headerbar-fg-rgb), var(--adw-dim-label-opacity)) !important;
 }
 
@@ -647,7 +687,11 @@ body.DesktopUI div.Woh0kBQCmatzC1daBX9i6
 	margin: 0 !important;
 	left: 36px !important;
 	top: -10px !important;
+<<<<<<< HEAD
 	border: 1px var(--adw-window-outline) solid !important;
+=======
+	border: 1px rgba(var(--adw-popover-fg-rgb), var(--adw-window-outline-opacity)) solid !important;
+>>>>>>> e5449e3 (added custom css + updated README)
 	box-shadow: var(--adw-popover-shadow) !important;
 	transition: none !important;
 }

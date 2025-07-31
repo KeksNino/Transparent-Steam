@@ -1,12 +1,19 @@
 /* Other global variables */
+<<<<<<< HEAD
+=======
+
+>>>>>>> e5449e3 (added custom css + updated README)
 :root
 {
 	--adw-base-transition-curve: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
 	--adw-gameicon-radius: 4px;
 	--adw-gameicon-uninstalled-filter: grayscale(100%) opacity(50%);
+<<<<<<< HEAD
 
 	--adw-cursor-pointer: default;
 
 	--adw-window-outline: rgba(255, 255, 255, var(--adw-window-outline-opacity));
+=======
+>>>>>>> e5449e3 (added custom css + updated README)
 }

@@ -11,7 +11,11 @@ body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._1eFe
 {
 	position: absolute !important;
 	right: 16px !important;
+<<<<<<< HEAD
 	cursor: var(--adw-cursor-pointer) !important;
+=======
+	cursor: default !important;
+>>>>>>> e5449e3 (added custom css + updated README)
 	box-sizing: border-box !important;
 	width: 34px !important;
 	height: 34px !important;
@@ -42,7 +46,11 @@ body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._3YO5
 	border-radius: var(--adw-card-radius) !important;
 	box-shadow: var(--adw-card-shadow) !important;
 	transition: var(--adw-button-transition), filter 200ms !important;
+<<<<<<< HEAD
 	cursor: var(--adw-cursor-pointer) !important;
+=======
+	cursor: default !important;
+>>>>>>> e5449e3 (added custom css + updated README)
 	position: relative !important;
 	overflow: visible !important;
 	margin-top: 18px !important;
@@ -141,7 +149,11 @@ body.DesktopUI div._3xRRJfD2xy95i9NhJxLTp0 div._17uEBe5Ri8TMsnfELvs8-N div._3YO5
 	color: rgb(var(--adw-view-fg-rgb)) !important;
 	background: transparent !important;
 	transition: var(--adw-button-transition) !important;
+<<<<<<< HEAD
 	cursor: var(--adw-cursor-pointer) !important;
+=======
+	cursor: default !important;
+>>>>>>> e5449e3 (added custom css + updated README)
 }
 
 body.DesktopUI div[class*="library_Container_"] div[class*="libraryhome_UpdatesContainer_"] div[class*="libraryhomenewupdates_PartnerEventRowCapsule_"].Panel div[class*="libraryhomenewupdates_GameIconAndName_"]:hover,
