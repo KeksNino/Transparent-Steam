@@ -2,11 +2,7 @@
 	"name": "Adwaita",
 	"author": "tkashkin",
 	"description": "A skin to make Steam look more like a native GNOME app",
-<<<<<<< HEAD
 	"version": "3.17",
-=======
-	"version": "3.2",
->>>>>>> e5449e3 (added custom css + updated README)
 
 	"github": {
 		"owner": "tkashkin",
@@ -34,10 +30,7 @@
 			"default": "Default",
 			"values": {
 				"Default": {},
-<<<<<<< HEAD
 				"adwaita-gray": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/adwaita-gray/adwaita-gray.css" } },
-=======
->>>>>>> e5449e3 (added custom css + updated README)
 				"breeze": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/breeze/breeze.css" } },
 				"canta": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/canta/canta.css" } },
 				"catppuccin-frappe": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/catppuccin-frappe/catppuccin-frappe.css" } },
@@ -49,15 +42,10 @@
 				"kate": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/kate/kate.css" } },
 				"metro": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/metro/metro.css" } },
 				"nord": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/nord/nord.css" } },
-<<<<<<< HEAD
 				"oled": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/oled/oled.css" } },
 				"one-pro": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/one-pro/one-pro.css" } },
 				"pop": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/pop/pop.css" } },
 				"rose-pine": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/rose-pine/rose-pine.css" } },
-=======
-				"one-pro": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/one-pro/one-pro.css" } },
-				"pop": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/pop/pop.css" } },
->>>>>>> e5449e3 (added custom css + updated README)
 				"tokyo-night": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/tokyo-night/tokyo-night.css" } },
 				"tomorrow-night": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/tomorrow-night/tomorrow-night.css" } },
 				"vapor": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/vapor/vapor.css" } },
@@ -65,7 +53,6 @@
 				"yaru": { "TargetCss": { "affects": [".*"], "src": "adwaita/colorthemes/yaru/yaru.css" } }
 			}
 		},
-<<<<<<< HEAD
 		"Font": {
 			"description": "Font family",
 			"default": "Adwaita",
@@ -80,13 +67,6 @@
 			"values": {
 				"Adwaita (GNOME)": { "TargetCss": { "affects": [".*"], "src": "adwaita/windowcontrols/adwaita.css" } },
 				"Breeze (KDE)": { "TargetCss": { "affects": [".*"], "src": "adwaita/windowcontrols/breeze.css" } },
-=======
-		"Window controls theme": {
-			"description": "Window control buttons style",
-			"default": "Adwaita",
-			"values": {
-				"Adwaita": { "TargetCss": { "affects": [".*"], "src": "adwaita/windowcontrols/adwaita.css" } },
->>>>>>> e5449e3 (added custom css + updated README)
 				"macOS": { "TargetCss": { "affects": [".*"], "src": "adwaita/windowcontrols/macos.css" } },
 				"Windows": { "TargetCss": { "affects": [".*"], "src": "adwaita/windowcontrols/windows.css" } }
 			}
@@ -133,7 +113,6 @@
 				"Show on Hover": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/login/hover_qr.css" } },
 				"Hide": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/login/hide_qr.css" } }
 			}
-<<<<<<< HEAD
 		},
 		"Show URL": {
 			"description": "Shows URL on Store and Community pages in the main window",
@@ -150,8 +129,6 @@
 				"no": {},
 				"yes": { "TargetCss": { "affects": [".*"], "src": "adwaita/extras/general/cursor_pointer.css" } }
 			}
-=======
->>>>>>> e5449e3 (added custom css + updated README)
 		}
 	}
 }

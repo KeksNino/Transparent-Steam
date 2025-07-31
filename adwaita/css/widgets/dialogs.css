@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 :root
 {
 	--adw-dialog-radius: 15px;
@@ -233,50 +232,4 @@ html.client_chat_frame
 		padding: 1px !important;
 		padding-top: 36px !important;
 	}
-=======
-body.DesktopUI div#popup_target::after,
-html.client_chat_frame div#popup_target::after
-{
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	pointer-events: none;
-	box-sizing: border-box;
-	border: 1px rgba(var(--adw-window-fg-rgb), var(--adw-window-outline-opacity)) solid;
-	z-index: 999;
-}
-
-body.DesktopUI .ModalPosition_TopBar,
-body.DesktopUI .singleWindowFocusBar,
-body.DesktopUI .title-area .title-area-highlight,
-html.client_chat_frame .ModalPosition_TopBar,
-html.client_chat_frame .singleWindowFocusBar,
-html.client_chat_frame .title-area .title-area-highlight
-{
-	display: none !important;
-}
-
-body.DesktopUI div.window_resize_grip,
-html.client_chat_frame div.window_resize_grip
-{
-	opacity: 0 !important;
-}
-
-/* Web dialogs */
-body.DesktopUI.ModalDialogBody .PopupFullWindow:not(:has(._2sssIwe0duyIrFvat2oXzH)) .title-area
-{
-	height: 36px !important;
-	min-height: 36px !important;
-}
-
-body.DesktopUI.ModalDialogBody .PopupFullWindow div[class*="htmlpopupdialog_HTMLPopupDialog_"].DialogContent,
-body.DesktopUI.ModalDialogBody .PopupFullWindow div.oHNgIzAySfCEOayCBwsg5.DialogContent
-{
-	background: rgb(var(--adw-headerbar-bg-rgb)) !important;
-	padding: 1px !important;
-	padding-top: 36px !important;
->>>>>>> e5449e3 (added custom css + updated README)
 }

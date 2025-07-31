@@ -1,19 +1,12 @@
-<<<<<<< HEAD
 # Adwaita for Steam
 
 A skin to make Steam look more like a native GNOME app
-=======
-# Steam Transparent
-
-Adwaita for Steam custom css to make steam ui transparent
->>>>>>> e5449e3 (added custom css + updated README)
 
 <p align="center">
 	<img alt="Store" src="/screenshots/store.png?raw=true" width="45%">
 	&nbsp; &nbsp; &nbsp; &nbsp;
 	<img alt="Library" src="/screenshots/library.png?raw=true" width="45%">
 </p>
-<<<<<<< HEAD
 
 ### Limitations
 
@@ -23,14 +16,11 @@ Adwaita for Steam custom css to make steam ui transparent
 * **Position of notifications**: Doesn't seem to be possible to change.
 * **Height of game list entries**: Doesn't seem to be possible to increase.
 
-=======
->>>>>>> e5449e3 (added custom css + updated README)
 ## Requirements
 
 * [Python 3](https://www.python.org/downloads/)
 * The skin is created and tested mostly on the Linux version of Steam. Steam's new UI has largely unified platform differences, so other platforms should work, but are not a priority.
 
-<<<<<<< HEAD
 ## Color themes
 
 <details><summary>Color theme previews</summary>
@@ -75,8 +65,6 @@ Adwaita for Steam custom css to make steam ui transparent
 
 </details>
 
-=======
->>>>>>> e5449e3 (added custom css + updated README)
 ## Installation
 
 ### With installer script
@@ -84,16 +72,11 @@ Adwaita for Steam custom css to make steam ui transparent
 ```bash
 git clone https://github.com/tkashkin/Adwaita-for-Steam
 cd Adwaita-for-Steam
-<<<<<<< HEAD
 ./install.py
-=======
-./install.py --custom-css
->>>>>>> e5449e3 (added custom css + updated README)
 ```
 
 #### Arguments
 
-<<<<<<< HEAD
 | Argument                | Short | Required Values                                          | Description                                      |
 |-------------------------|-------|----------------------------------------------------------|--------------------------------------------------|
 | --help                  | -h    |                                                          | Show help message                                |
@@ -106,18 +89,6 @@ cd Adwaita-for-Steam
 | --extras                | -e    | [Extra](adwaita/extras)                                  | Enable one or multiple theme extras              |
 | --target                | -t    | linux / windows / macos / flatpak / snap / \[custom dir] | Choose target location for install               |
 | --uninstall             | -u    |                                                          | Uninstall theme                                  |
-=======
-| Argument                | Short | Required Values                                       | Description                                        |
-| ----------------------- | ----- | ----------------------------------------------------- | -------------------------------------------------- |
-| --help                  | -h    |                                                       | Show help message                                  |
-| --list-options          | -l    |                                                       | List available themes and extras                   |
-| --windowcontrols-theme  |       | auto / adwaita / windows / macos                      | Change window control buttons style                |
-| --windowcontrols-layout |       | auto / gnome / pantheon / windows / macos / \[custom] | Change window control buttons position and order   |
-| --custom-css            |       |                                                       | Enable [custom css](/custom)                       |
-| --extras                | -e    | [Extra](adwaita/extras)                               | Enable one or multiple theme extras                |
-| --target                | -t    | normal / flatpak / \[custom dir]                      | Choose target location for install (default: both) |
-| --uninstall             | -u    |                                                       | Uninstall theme                                    |
->>>>>>> e5449e3 (added custom css + updated README)
 
 #### Example Usage
 
@@ -125,7 +96,6 @@ cd Adwaita-for-Steam
 # List options
 ./install.py -l
 # Install with customizations
-<<<<<<< HEAD
 ./install.py -c nord -e login/hide_qr -e library/hide_whats_new
 ```
 
@@ -145,21 +115,9 @@ Use the [graphical installer](https://github.com/Foldex/AdwSteamGtk) by [@Foldex
 
 <a href="https://flathub.org/apps/details/io.github.Foldex.AdwSteamGtk"><img width="200" alt="Download on Flathub" src="https://flathub.org/assets/badges/flathub-badge-i-en.svg"/></a>
 
-=======
-./install.py --custom-css -e login/hide_qr -e library/hide_whats_new
-```
-
->>>>>>> e5449e3 (added custom css + updated README)
 ### Windows Install
 
 - Download the [Latest Release](https://github.com/tkashkin/Adwaita-for-Steam/releases)
 - Ensure you have [Python](#requirements) installed
 - Double click the `install_windows` bat script and follow the prompts
 
-<<<<<<< HEAD
-=======
-### Known Issues
-
-- The Steam window can sometimes appear as just black.
-- The Steam Overlay can be very laggy when downloading something (idk why)
->>>>>>> e5449e3 (added custom css + updated README)

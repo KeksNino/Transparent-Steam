@@ -126,14 +126,11 @@ html.client_chat_frame
 					}
 				}
 
-<<<<<<< HEAD
 				div.socialSearchContainer
 				{
 					background: none !important;
 				}
 
-=======
->>>>>>> e5449e3 (added custom css + updated README)
 				form.socialInputContainer
 				{
 					transform: none !important;
@@ -201,11 +198,7 @@ html.client_chat_frame
 
 						div.friendSearchClear
 						{
-<<<<<<< HEAD
 							cursor: var(--adw-cursor-pointer) !important;
-=======
-							cursor: default !important;
->>>>>>> e5449e3 (added custom css + updated README)
 							width: 16px !important;
 							height: 16px !important;
 							right: 9px !important;
@@ -242,11 +235,7 @@ html.client_chat_frame
 			div.searchIconButton, div.friendListButton, div.friendRequestButton
 			{
 				-webkit-app-region: no-drag;
-<<<<<<< HEAD
 				cursor: var(--adw-cursor-pointer) !important;
-=======
-				cursor: default !important;
->>>>>>> e5449e3 (added custom css + updated README)
 				box-sizing: border-box !important;
 				width: 34px !important;
 				height: 34px !important;
@@ -392,11 +381,7 @@ html.client_chat_frame
 				div.currentUserAvatar
 				{
 					-webkit-app-region: no-drag;
-<<<<<<< HEAD
 					cursor: var(--adw-cursor-pointer) !important;
-=======
-					cursor: default !important;
->>>>>>> e5449e3 (added custom css + updated README)
 					box-sizing: border-box !important;
 					width: 34px !important;
 					height: 34px !important;
@@ -483,11 +468,7 @@ html.client_chat_frame
 							line-height: normal !important;
 							font-size: var(--adw-text-base-size) !important;
 							font-weight: var(--adw-text-base-weight) !important;
-<<<<<<< HEAD
 							cursor: var(--adw-cursor-pointer) !important;
-=======
-							cursor: default !important;
->>>>>>> e5449e3 (added custom css + updated README)
 						}
 
 						&::before
@@ -520,11 +501,7 @@ html.client_chat_frame
 							box-sizing: border-box !important;
 							border-radius: 50% !important;
 							margin: 0 !important;
-<<<<<<< HEAD
 							cursor: var(--adw-cursor-pointer) !important;
-=======
-							cursor: default !important;
->>>>>>> e5449e3 (added custom css + updated README)
 
 							div, svg
 							{
@@ -593,11 +570,7 @@ html.client_chat_frame
 
 			div.favoriteElement
 			{
-<<<<<<< HEAD
 				cursor: var(--adw-cursor-pointer) !important;
-=======
-				cursor: default !important;
->>>>>>> e5449e3 (added custom css + updated README)
 				width: 36px !important;
 				height: 36px !important;
 				transition: width 200ms, height 200ms !important;
@@ -610,11 +583,7 @@ html.client_chat_frame
 					width: 100% !important;
 					height: 100% !important;
 					transition: width 200ms, height 200ms !important;
-<<<<<<< HEAD
 					cursor: var(--adw-cursor-pointer) !important;
-=======
-					cursor: default !important;
->>>>>>> e5449e3 (added custom css + updated README)
 				}
 
 				div.ChatRoomGroupAvatar
@@ -740,11 +709,7 @@ html.client_chat_frame
 				padding: 0 6px !important;
 				margin: 0 calc(6px - var(--adw-scrollbar-size)) 2px 6px !important;
 				background: none !important;
-<<<<<<< HEAD
 				cursor: var(--adw-cursor-pointer) !important;
-=======
-				cursor: default !important;
->>>>>>> e5449e3 (added custom css + updated README)
 				font-family: var(--adw-text-font) !important;
 				font-size: var(--adw-text-gamelist-size) !important;
 				font-weight: var(--adw-text-gamelist-weight) !important;
@@ -775,11 +740,7 @@ html.client_chat_frame
 				letter-spacing: normal !important;
 				text-transform: none !important;
 				align-items: center !important;
-<<<<<<< HEAD
 				cursor: var(--adw-cursor-pointer) !important;
-=======
-				cursor: default !important;
->>>>>>> e5449e3 (added custom css + updated README)
 			}
 
 			span.groupCount
@@ -801,11 +762,7 @@ html.client_chat_frame
 				margin: 3px 6px 3px 0 !important;
 				opacity: 0.5 !important;
 				color: inherit !important;
-<<<<<<< HEAD
 				cursor: var(--adw-cursor-pointer) !important;
-=======
-				cursor: default !important;
->>>>>>> e5449e3 (added custom css + updated README)
 				z-index: 1 !important;
 
 				svg
@@ -844,11 +801,7 @@ html.client_chat_frame
 				top: 3px !important;
 				opacity: 0.5 !important;
 				color: inherit !important;
-<<<<<<< HEAD
 				cursor: var(--adw-cursor-pointer) !important;
-=======
-				cursor: default !important;
->>>>>>> e5449e3 (added custom css + updated README)
 			}
 
 			img.groupIcon, img.gameIcon
@@ -1035,21 +988,13 @@ html.client_chat_frame
 			{
 				padding: 0 !important;
 				margin: 0 !important;
-<<<<<<< HEAD
 				cursor: var(--adw-cursor-pointer) !important;
-=======
-				cursor: default !important;
->>>>>>> e5449e3 (added custom css + updated README)
 
 				div.friendInviteButton
 				{
 					color: rgba(var(--adw-sidebar-fg-rgb), 0.5) !important;
 					border-color: currentColor;
-<<<<<<< HEAD
 					cursor: var(--adw-cursor-pointer) !important;
-=======
-					cursor: default !important;
->>>>>>> e5449e3 (added custom css + updated README)
 
 					svg, svg *
 					{
