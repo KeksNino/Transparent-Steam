@@ -1,4 +1,4 @@
-#i Steam Transparent
+# Steam Transparent
 
 Adwaita for Steam custom css to make steam ui transparent
 
